@@ -1,6 +1,7 @@
-from keras.models import Model, Sequential
-from keras.layers import *
+from keras.models import Model
+from keras.layers import Dense, Lambda, Input, K
 from keras.optimizers import TFOptimizer
+
 import tensorflow as tf
 
 

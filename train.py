@@ -23,5 +23,3 @@ if __name__ == "__main__":
     checkpoint = ModelCheckpoint(filepath, verbose=0, period=100)
     test_net.model_ae.fit(df_train, df_train, nb_epoch=200, batch_size=50000, shuffle=True, verbose=0,
                           callbacks=[TQDMCallback(), checkpoint])
-
-    test_net = NormalizingAutoencoder(1, 16, "auto_encoder2-200.hdf5")
